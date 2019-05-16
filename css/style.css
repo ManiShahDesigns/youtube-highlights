@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #000;
+}
+
+.brand-logo {
+  color: #ff0000 !important;
+  font-size: 1.5rem !important;
+}
+
+.hero-heading {
+  color: #ff0000;
+}
+
+.black {
+  display: none;
+}
+
+#content,
+#login-button{
+  display: none;
+}
+
+#logout-button {
+  visibility: hidden;
+}
+
+#channel-form {
+  margin: 0 auto;
+}
+
+#channel-field {
+  text-align: center;
+  background: #fff;
+}
+
+.channel-button {
+  width: 100%;
+}
+
+.hero-not-logged {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-not-logged p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero-not-logged img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+#video-container h4 {
+  color: #000;
+}
+
+.collection {
+  background: #fff;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}

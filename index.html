@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>YouTube Highlights</title>
+  </head>
+  <body>
+    <nav class="black">
+      <div class="container">
+        <a href="index.html" class="brand-logo">YouTube Highlights</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="btn red darken-4" id="logout-button">Log Out </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <section>
+      <div class="container">
+        <div class="hero-not-logged">
+          <div class="row">
+            <h2 class="hero-heading">YouTube Highlights</h2>
+            <div class="col m4 s12">
+              <img
+                src="https://images.unsplash.com/photo-1540655037529-dec987208707?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1094&q=80"
+                alt="YouTube"
+              />
+            </div>
+            <div class="col m4 s12">
+              <img
+                src="https://images.pexels.com/photos/34407/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Person Holding phone"
+              />
+            </div>
+            <div class="col m4 s12">
+              <img
+                src="https://images.unsplash.com/photo-1542039375-28138150cc31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
+                alt="YouTube on Laptop"
+              />
+            </div>
+          </div>
+          <p>
+            Check out the latest videos and stats of your favourite YouTube
+            channels easier! Simply login with your Google account and start
+            searching without having to reload the page.
+          </p>
+          <a class="btn blue darken-4" id="login-button">Log In</a>
+        </div>
+        <div id="content">
+          <div class="row">
+              <form id="channel-form">
+                  <div class="input-field col s12">
+                    <input
+                      type="text"
+                      placeholder="Enter Channel Name"
+                      id="channel-field"
+                    />
+                    <input type="submit" value="Get a New Channel" class="btn brown lighten-2 channel-button" />
+                  </div>
+                </form>
+            <div class="form-body col s12"></div>
+            <div id="channel-data" class="col s12"></div>
+            <div class="col s12 white" id="video-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+  </body>
+</html>
